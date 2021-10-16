@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: rgb(203 182 154);
+            border: 3px solid rgb(44, 99, 130);
+
+            /* we can set padding for top, buttom, left and right like this */
+            /* padding-top: 79px ;
+            padding-bottom: 79px ; */
+            /* padding-left: 34px; */
+
+             /* margin-top: 3px;
+            margin-bottom: 5px;
+            margin-left: 34px;
+            margin-right:5px ; */ 
+
+            /* padding: 24px 56px 6px 79px ; padding = top right bottom left */
+
+            padding : 34px 19px ; /*padding :y(top/bottom) x(left/right) */
+            margin: 36px ;
+            border-radius: 23px;
+            width: 533px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error dicta cum iure veritatis consectetur incidunt, neque laudantium culpa voluptas dolorum est magnam libero?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error dicta cum iure veritatis consectetur incidunt, neque laudantium culpa voluptas dolorum est magnam libero?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error dicta cum iure veritatis consectetur incidunt, neque laudantium culpa voluptas dolorum est magnam libero?</p>
+    </div>
+</body>
+</html>
