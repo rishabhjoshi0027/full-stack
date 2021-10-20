@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box tutorial</title>
+    <style>
+        .container{
+            height: 544px ;
+            width: 100%;
+            border: 2px solid black;
+            /* Initilize the xontainer as a flex box */
+            display: flex;
+
+            /* flex properties for flex container */
+            /* flex-direction: row; by defalut */
+
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+             /* flex-wrap: wrap ;  */
+            /* flex-wrap: wrap-reverse; */
+
+            /* if you want to reverse and wrap both together */
+            /* flex-flow: row-reverse wrap; */
+
+            /* allign the flex item to center */
+            /* justify-content: center;
+
+            justify-content: space-between; /*The space */
+
+            /* justify-content: space-evenly; */
+            
+            /* justify-content: space-around; */
+
+            /* align-items: center;
+            align-items: flex-end;
+            align-items: flex-start; */
+            align-items: stretch;
+            
+
+        }
+        .item{
+            width: 200px ;
+            height: 200px ;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px ;
+            padding: 3px ;
+
+            
+        }
+        #item-1{
+            /* flex properites for flex items */
+
+            /* higher the order, later it shows up in the container */
+            /* order: 2; */
+            /* flex-grow: 2;
+            flex-shrink: 2; */
+        }
+        #item-2{
+            /* flex-grow: 3;
+            flex-shrink: 3; */
+
+            flex-basis: 320px;
+            /* when flex direction is set tot row flow basis will control width */
+
+            /* when flex basis firrection is set to xolum flex basis wil control height */
+
+        }
+        #item-3{
+            flex: 2 2 300px ;
+            /* grow, shrink, basis*/
+            align-self: flex-end; 
+            align-self: flex-end;
+            align-self: center; 
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is flex box</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box </div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div> 
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+
+        }
+        /* kitne bhi depth m div ho wo sbko select kr lega */
+
+        /* If p is contained by any li which is contained by div */
+
+        /* div  li p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+
+        } */
+
+        /* If p is right inside div then this css whill be applied */
+
+          /* div > p{ /*This  means p should be the dirrect child of the div */ 
+            /* color: yellow;
+            background-color: green;
+            font-weight: bold;
+
+        } */ 
+
+        /* If p is right after div ie. p is next sibling of div */
+
+        /* div + p{
+            color: white;
+            background-color: pink;
+
+        } */
+
+    </style>
+</head>
+<body>
+  <h1>THis is more on selectors</h1>  
+  <div class="container">
+      <div class="row">
+          <ul>
+              <li class="item"><p> this is another paragraph inside li</p>
+              </li>
+          </ul>
+          <p>This is a paragraph</p>
+      </div>
+      <p>This is another paragraph</p>
+  </div>
+  <p>This is another paragraph</p>
+</body>
+</html>
